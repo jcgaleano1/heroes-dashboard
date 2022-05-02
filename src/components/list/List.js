@@ -15,7 +15,7 @@ const PokeList = ({ list, loading }) => {
               <Card key={item.id} name={item.name} location={item.location} img={item.img} id={item.id}></Card>
             ))}
             <div className="list-button">
-              <Link className="link" to={'/statistics'}>Watch general statistics</Link>
+              <Link className="link" to={'/heroes/statistics'}>Watch general statistics</Link>
             </div>
           </>
       }
