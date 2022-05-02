@@ -15,11 +15,12 @@ function App() {
 
   useEffect(() => {
     try {
-      axios.get('http://localhost:3000/heroes')
+      axios.get('https://my-json-server.typicode.com/jcgaleano1/db.json/heroes')
         .then(res => {
+          console.log(res);
           setInterval(() => {
             setLoading(false)
-          }, 2000)
+          }, 1000)
           setList(res.data);
         })
     } catch (error) {
@@ -33,7 +34,7 @@ function App() {
       <NavBar />
       
       <Routes>
-        <Route path="/heroes" element={<List list={list} loading={loading} />}></Route>
+        <Route path="/" element={<List list={list} loading={loading} />}></Route>
         <Route path="/heroes/:id" element={<Item />}></Route>
         <Route path="/heroes/statistics" element={<Charts list={list}/>}></Route>
       </Routes>

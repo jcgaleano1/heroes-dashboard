@@ -7,7 +7,9 @@ import Loading from '../loading/Loading';
 import { ComposedChart, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Bar } from "recharts";
 import { saveAs } from 'file-saver';
 
+
 const Item = () => {
+
     const [item, setItem] = useState([]);
     const [loading, setLoading] = useState(true);
     const [newData, setNewData] = useState([]);
@@ -15,7 +17,7 @@ const Item = () => {
 
     useEffect(() => {
         try {
-            axios.get(`http://localhost:3000/heroes/${params.id}`)
+            axios.get(`https://my-json-server.typicode.com/jcgaleano1/db.json/heroes/${params.id}`)
                 .then(res => {
                     setInterval(() => {
                         setLoading(false)
