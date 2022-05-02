@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/heroes-dashboard/static/css/main.5a57b69c.css",
-    "main.js": "/heroes-dashboard/static/js/main.3fd29f2d.js",
+    "main.js": "/heroes-dashboard/static/js/main.a0b5530c.js",
     "static/media/avengers-logo.png": "/heroes-dashboard/static/media/avengers-logo.761c15f31ad480ff2eac.png",
     "index.html": "/heroes-dashboard/index.html",
     "main.5a57b69c.css.map": "/heroes-dashboard/static/css/main.5a57b69c.css.map",
-    "main.3fd29f2d.js.map": "/heroes-dashboard/static/js/main.3fd29f2d.js.map"
+    "main.a0b5530c.js.map": "/heroes-dashboard/static/js/main.a0b5530c.js.map"
   },
   "entrypoints": [
     "static/css/main.5a57b69c.css",
-    "static/js/main.3fd29f2d.js"
+    "static/js/main.a0b5530c.js"
   ]
 }
